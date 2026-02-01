@@ -1,0 +1,521 @@
+@media (max-width: 480px){
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: medium;
+}
+html body{
+    width: 100%;
+    height: 100%;
+    color:#263551;
+}
+.container{
+    width: 100%;
+   height: 15vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 0;
+    margin-bottom: 2vw;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+}
+#menu{
+    display: block;
+    font-size: 1.5rem;
+}
+.hide{
+    display: none;
+}
+nav h2{
+    width: 50%;
+    font-size: 2rem;
+}
+.icon{
+    display: none;
+}
+.page1{
+    width: 100%;
+    min-height: 120vh;
+    display: block;
+}
+.bannr1{
+    width: 85%;
+}
+.center{
+    width: 100%;
+    margin: 1vw 0;
+}
+.center h1{
+    font-size: 4.5rem;
+}
+.center h3{
+    font-size: 2rem;
+    padding: 1vw 1vw;
+}
+.bannr2{
+    width: 85%;
+    padding: 3vw;
+}
+.page2{
+    width: 100%;
+    height: 70vh;
+    padding: 2vw;
+}
+.page2 h3{
+    font-size: 3rem;
+}
+.page2 h3::after{
+    width: 10rem;
+    left: 26%;
+}
+.product-home{
+   min-height: 25vh;
+    margin: 3rem 0;
+}
+.swiper-slide{
+  align-items: start;
+}
+.swiper-slide button{
+    margin-top: 2vw;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    border-radius: 2vw;
+}
+.page3{
+  min-height: 130vh;
+}
+.page3 h3{
+    font-size: 3rem;
+}
+.page3 h3::after{
+    width: 7rem;
+    left: 36%;
+}
+.about-home{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.enqury{
+    width: 100%;
+    height: 60vh;
+}
+.enqury form{
+    padding: 0 25px;
+    width: 80%; 
+    height:55vh;
+}
+form h4{
+    font-size: 2rem;
+}
+form button{
+    width: 4.5rem;
+    height: 1.5rem;
+    font-size: 0.7rem;
+    background-color:#00D4FF;
+    color: #1B263B;
+    border: none;
+    border-radius: 0.3rem;
+}
+.text {
+    width: 100%;
+}
+.text h4{
+    font-size: 2.6rem;
+    color: #4b6390;
+}
+.text h4::after{
+    width:10rem;
+    left: 20%;
+    border: 2px solid #73ace2;
+}
+.text p{
+    word-spacing: 1vw;
+    width: 90%;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+}
+.text span{
+    font-size: 1.7rem;
+}
+i{
+   border: 1px solid black;
+   background-color: #000;
+   color: #ffffff; 
+   width: 40px !important;
+   height: 40px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 18px; 
+   transition: 0.3s;
+   padding-top: 3vw;
+}
+.fall h4 a{
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #2b3c5c;
+    text-decoration: none;
+}
+.fall h4 a::after{
+    display: none;
+}
+.fall h4 a:hover{
+    color: #00D4FF;
+}
+.fall a{
+    color: #000;
+}
+.page5{
+   min-height: 250vh;
+    color: #321f52;
+}
+.about2{
+    display: block;
+}
+.right{
+    width: 100%;
+    padding: 2vw;
+}
+.right h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #525F78; 
+    font-size: 2.2rem;
+    padding: 5vw 0;
+    width: 100%;
+}
+.right h2{
+   text-align: center;
+   font-size: 0.9rem;
+}
+.right h4{
+    font-size:0.8rem;
+}
+.right p{
+    font-size: 0.6rem;
+}
+.right small{
+    color: #202145;
+    font-size: 0.7rem;
+}
+.card-box{
+    width: 100%;
+    display: block;
+    justify-content: center;
+}
+.card{
+    width: 75%;
+    height: 13rem;
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center;
+}
+.c-icon i{
+    width: 70px !important;
+    height: 70px !important;
+    font-size: 1.7rem !important;
+    padding-top: 20px;
+}
+.card h3{
+    width: 70%;
+    font-size: 1.8rem;
+}
+.page6{
+     width: 100%;
+   min-height: 300vh;
+    color: #321f52;
+    padding: 1vw;
+}
+.heding{
+    width: 100%;
+    padding: 2vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heding h1{
+    font-size: 3rem; 
+    text-align: center;
+    width: 100%;
+}
+.heding button{
+    display: none;     
+}
+.heding button a{
+    text-decoration: none;
+    color: #1d1f23;
+    text-transform: uppercase;
+}
+.heding button a:hover{
+    color: #ffffff;
+}
+.product2{
+    width:100% ;
+}
+.card-space{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.cards{
+    height: fit-content;
+    width: 70%;
+    flex-direction: column;
+     margin: 2vw;
+    justify-content: center;
+     align-items: center; 
+    transition: all 0.3s ease; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden; 
+}
+.cards:hover{
+    box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3); 
+    border-color: #00D4FF;
+    border-radius: 10px;
+}
+.cards img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    padding-bottom: 1vw;
+}
+
+.cards img:hover{
+     transform: scale(1.1);
+}
+.cards div{
+    height: 10rem;
+    padding: 0;
+}
+.cards button{
+    margin-bottom: 2vw;
+    width: 7rem;
+    height: 2.7rem;
+    font-size: 1.2rem;
+    background-color:#00D4FF;
+    color: #1B263B;
+    border: none;
+    border-radius: 0.4rem;
+}
+.cards button:hover{
+    background-color: #18344b;
+}
+.cards button a{
+    text-decoration: none;
+    color: #1B263B;
+}
+.cards button a:hover{
+    color: #ffffff;
+}
+.full-width{
+    display: block;
+    position: static;
+}
+#cross{
+    display: none;
+}
+.page7{
+    width: 100%;
+    height: 70vh;
+}
+main #cont{
+    font-size: 3rem;
+    width: 92%;
+}
+.form{
+    width: 100%;
+}
+.form form{
+    margin: 1rem 0;
+    width: 80%;
+    padding-left: 4vw;
+    padding-top: 1rem;
+}
+
+.form input{
+    width: 90%;
+    height: 2rem;
+    margin-top: 2vw;
+    font-size: 1rem;
+}
+.form  select{
+    width: 90%;
+    height: 2rem;
+    margin-top: 2vw;
+    font-size: 1rem; 
+}
+.form textarea{
+    width: 90%;
+    height: 4rem;
+    margin-top: 2vw;
+    font-size: 1rem;
+}
+.form button{
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+}
+}
+@media (min-width: 1024px) {
+  .fall {
+    display: none !important; 
+  }
+}
+@media (max-width: 768px){
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: medium;
+}
+html body{
+    width: 100%;
+    height: 100%;
+    color:#263551;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+}
+.icon{
+   width:30%
+}
+#gap{
+    display: flex;
+}
+i{
+    padding-top: 1vw;
+}
+button{
+    width: 6rem !important;
+    height: 2.5rem !important;
+    font-size: 1rem !important;
+    border-radius: 0.5rem !important;
+}
+.page3 h3{
+    font-size: 3.5rem;
+}
+.page3 h3::after{
+    width: 7rem;
+    left: 43%;
+}
+form h4{
+    font-size: 2rem;
+}
+.text {
+    width: 100%;
+}
+.text h4{
+    font-size: 2.6rem;
+    color: #4b6390;
+}
+.text h4::after{
+    width:10rem;
+    left: 20%;
+    border: 2px solid #73ace2;
+}
+.text p{
+    word-spacing: 1vw;
+    width: 90%;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+}
+.text span{
+    font-size: 1.7rem;
+}
+.right h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #525F78; 
+    font-size: 2.2rem;
+    width: 100%;
+}
+.right h2{
+   text-align: center;
+   font-size: 1rem;
+}
+.right h4{
+    font-size:1rem;
+}
+.right p{
+    width:100%;
+    font-size: 0.9rem;
+}
+.right small{
+    color: #202145;
+    font-size: 0.8rem;
+}
+.card{
+    width: 100%;
+    height: 15rem;
+    flex-direction: column;
+}
+.card h3{
+    width: 90%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.c-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.c-icon i{
+    width: 70px !important;
+    height: 70px !important;
+    font-size: 1.7rem !important;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.page7{
+    width: 100%;
+    height: 80vh;
+}
+main #cont{
+    font-size: 3rem;
+    width: 92%;
+}
+.form{
+    width: 100%;
+}
+.form form{
+    margin: 1rem 0;
+    width: 70%;
+    padding-left: 4vw;
+    padding-top: 1rem;
+}
+
+.form input{
+    width: 90%;
+    height: 2.2rem;
+    margin-top: 2vw;
+    font-size: 1rem;
+}
+.form  select{
+    width: 90%;
+    height: 2.2rem;
+    margin-top: 2vw;
+    font-size: 1rem; 
+}
+.form textarea{
+    width: 90%;
+    height: 4.2rem;
+    margin-top: 2vw;
+    font-size: 1rem;
+}
+.form button{
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+}
+}
