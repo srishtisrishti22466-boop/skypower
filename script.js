@@ -78,23 +78,6 @@ let enquery = () => {
     fall();
 
 
-    let customersElement = document.querySelector("#customers");
-    let yearsElement = document.querySelector("#years");
-
-let a = 0;
-let b = 0;
- setInterval(() => {
-  
-  if (yearsElement) {
-    yearsElement.innerText = a + 11;
-    a++;
-  }
-
-  if (customersElement) {
-      customersElement.innerText = b + 1000;
-      b++;
-    }
-}, 1000);
   
 
 

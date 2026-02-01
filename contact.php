@@ -76,7 +76,7 @@ if(isset($_POST['submit'])){
     }
     
 ?>
-                <form action="" method="post">
+                <form action="" method="POST">
                     <input type="text" placeholder="Name.." pattern="[A-Za-z ]{3,}" title="Naam mein sirf letters hone chahiye" name="name" required>
                     <input type="email" placeholder="Email..:example@mail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
        title="Kripya sahi email address bharein (example@mail.com)" name="email" required>
@@ -93,7 +93,7 @@ if(isset($_POST['submit'])){
                         <option value="Sales/New Purchase">Sales/New Purchase</option>
                         <option value="Other">Others</option>
                     </select>
-                    <button type="submit">Submit</button>
+                    <button type="submit" name="submit">Submit</button>
                 </form>
             </div>
         </div>

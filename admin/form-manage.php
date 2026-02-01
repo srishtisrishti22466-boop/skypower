@@ -26,6 +26,7 @@ $user = $pre->fetchAll(PDO::FETCH_ASSOC);
                     <th>message</th>
                     <th>city</th>
                     <th>subject</th>
+                    <th>action</th>
                 </tr>
                 <?php  
                 foreach ($user as $row):
@@ -38,6 +39,7 @@ $user = $pre->fetchAll(PDO::FETCH_ASSOC);
                     <td><?php echo $row['message'] ?></td>
                     <td><?php echo $row['city'] ?></td>
                     <td><?php echo $row['subject'] ?></td>
+                    <td><a href="form-delete.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Delete</a></td>
                  </tr>
 
                <?php endforeach; ?>

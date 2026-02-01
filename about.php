@@ -120,7 +120,7 @@ if(isset($_POST['submit'])){
             </div>
             <div class="card">
             <span class="c-icon"><i class="fa-solid fa-face-smile"></i></span>
-            <h3><span id="customers">1000+</span> happy Costumers</h3>
+            <h3>1000+ happy Costumers</h3>
             </div>
         </div>
     </div>
