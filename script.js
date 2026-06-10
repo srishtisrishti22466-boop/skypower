@@ -1,82 +1,78 @@
 
-  let swipers = () => {
-  let swiper = new Swiper(".mySwiper", {
-    // Default Mobile ke liye 
-    slidesPerView: 1, 
-    spaceBetween: 10,
-    loop: true, 
-    
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+//   let swipers = () => {
+//   new Swiper(".mySwiper", {
+//     slidesPerView: 1,
+//     spaceBetween: 10,
+//     loop: true,
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//     breakpoints: {
+//       768: {
+//         slidesPerView: 2,
+//         spaceBetween: 20,
+//       },
+//       1024: {
+//         slidesPerView: 3,
+//         spaceBetween: 25,
+//       },
+//     },
+//   });
+// };
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 25,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
     },
 
-    // Desktop/Tablet ke liye
-    breakpoints: {
-      // 768px se badi screen
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      // Jab screen 1024px se badi ho
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 25,
-      },
+    992: {
+      slidesPerView: 3,
+    },
+
+    1200: {
+      slidesPerView: 4,
     }
-  });
-};
+  }
+});
 
-swipers(); 
+ swiper();
 
-
- let abcd = () => {  
-document.addEventListener("DOMContentLoaded",function(){
-  let enquiry = document.querySelectorAll(".navs");
-  enquiry.forEach(det => {
-    det.addEventListener("mouseenter", function() {
-        this.classList.add("active-nav");
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".navs").forEach((nav) => {
+    nav.addEventListener("mouseenter", function () {
+      this.classList.add("active-nav");
     });
-    det.addEventListener("mouseleave", function() {
-        this.classList.remove("active-nav");
+    nav.addEventListener("mouseleave", function () {
+      this.classList.remove("active-nav");
     });
   });
-}); 
-} ;
-  abcd();
 
- 
-let enquery = () => {
-    let bton = document.querySelector(".btn")
-    let close = document.querySelector("#cross")
-    let show = document.querySelector(".full-width")
-     bton.addEventListener("click", function(){
-       show.classList.remove("none")
-     });
-     
-     close.addEventListener("click", function(){
-       show.classList.add("none")
-     });
-    };
-     enquery();
-
-
-    let form = document.querySelector("form");
-    form.addEventListener("submit", function(event){
+  const form = document.querySelector("form");
+  if (form) {
+    form.addEventListener("submit", function (event) {
       event.preventDefault();
       alert("Form submitted successfully!");
     });
+  }
 
-    let fall = () => {
-      let fallcont = document.querySelector(".fall")
-      let menu = document.querySelector("#menu")
-      menu.addEventListener("click", function(e){
-        e.preventDefault();
-        fallcont.classList.toggle("active");
-      });
-    };
-    fall();
-
+  const menu = document.querySelector("#menu");
+  const fallcont = document.querySelector(".fall");
+  if (menu && fallcont) {
+    menu.addEventListener("click", function (e) {
+      e.preventDefault();
+      fallcont.classList.toggle("active");
+    });
+  }
+});
 
   
 
