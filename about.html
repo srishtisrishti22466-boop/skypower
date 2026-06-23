@@ -1,9 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About SkyPower Stabilizers - Trusted Voltage Experts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,8 +18,13 @@
       <span><i class="fa-regular fa-envelope-open"></i> <a href="mailto:skypower142@gmail.com">skypower142@gmail.com</a></span>
       <span><i class="fa-brands fa-whatsapp"></i> <a href="tel:+918860705070">+91 88607 05070</a></span>
     </div>
-    <a class="topbar-action" href="tel:+91958275348">Need help? Call now</a>
+    <a class="topbar-action" href="tel:+918860705070" aria-label="Call +91 88607 05070">Need help? Call now</a>
   </section>
+
+  <a class="call-now-float" href="tel:+918860705070" aria-label="Call +91 88607 05070">
+    <i class="fa-solid fa-phone"></i>
+    Call now
+  </a>
 
   <header class="site-header">
     <div class="container header-inner">
@@ -29,7 +37,13 @@
         <a href="about.html" class="navs active">About</a>
         <a href="product.html" class="navs">Product</a>
         <a href="contact.html" class="navs">Contact</a>
-        <a href="#" id="menu" class="nav-toggle">Menu</a>
+        <button type="button" id="menu" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="nav-toggle-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
       </nav>
     </div>
   </header>
@@ -85,7 +99,7 @@
           </div>
           <div class="about-image-box">
             <img src="imgs/wallpeper1.jpg" alt="SkyPower stabilizer installation and service" />
-            <div class="image-badge">Premium Quality<br>Since 2010</div>
+            <div class="image-badge">Premium Quality<br>Since 2016</div>
           </div>
         </div>
       </div>
@@ -258,29 +272,111 @@
   </main>
 
   <footer class="footer">
+
     <div class="footer-container">
-      <div class="footer-col">
-        <h3>Head office</h3>
-        <p><i class="fas fa-map-marker-alt"></i> Plot No 78/1 Bhalswa Jahangirpuri, Delhi-110042</p>
-        <p><i class="fas fa-clock"></i> Mon - Sat: 9:00am - 6:00pm</p>
-      </div>
-      <div class="footer-col">
-        <h3>Contact</h3>
-        <p><i class="fas fa-phone"></i> +91 88607 05070</p>
-        <p><i class="fas fa-mobile-alt"></i> +91 95827 5348</p>
-        <p><i class="fas fa-envelope"></i> skypower142@gmail.com</p>
-      </div>
-      <div class="footer-col">
-        <h3>Quick links</h3>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="product.html">Product</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+
+        <!-- Company -->
+        <div class="footer-col company">
+            <img src="imgs/sp-logo.png" alt="Skypower Logo" class="footer-logo">
+
+            <p>
+                Advanced voltage stabilizers built for performance,
+                protection, and peace of mind.
+            </p>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/skypower142" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/skypower142" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/skypower142" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@skypower142" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- Company Links -->
+        <div class="footer-col">
+            <h3>Company</h3>
+
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Certifications</a></li>
+                <li><a href="#">News & Media</a></li>
+            </ul>
+        </div>
+
+        <!-- Products -->
+        <div class="footer-col">
+            <h3>Products</h3>
+
+            <ul>
+                <li><a href="#">Residential Stabilizers</a></li>
+                <li><a href="#">Commercial Stabilizers</a></li>
+                <li><a href="#">Industrial Stabilizers</a></li>
+                <li><a href="#">Servo Stabilizers</a></li>
+                <li><a href="#">Bulk Solutions</a></li>
+            </ul>
+        </div>
+
+        <!-- Solutions -->
+        <div class="footer-col">
+            <h3>Solutions</h3>
+
+            <ul>
+                <li><a href="#">For Home</a></li>
+                <li><a href="#">For Business</a></li>
+                <li><a href="#">For Industry</a></li>
+                <li><a href="#">OEM Solutions</a></li>
+                <li><a href="#">Custom Solutions</a></li>
+            </ul>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-col">
+            <h3>Support</h3>
+
+            <ul>
+                <li><a href="#">Download Center</a></li>
+                <li><a href="#">Product Registration</a></li>
+                <li><a href="#">Warranty Policy</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Service Center</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col newsletter">
+            <h3>Newsletter</h3>
+
+            <p>
+                Subscribe to get updates on new products and offers.
+            </p>
+
+            <form class="newsletter-form"action="https://formsubmit.co/skypower142@gmail.com" method="post">
+                <input type="email"
+                       placeholder="Enter your email" name="email">
+
+                <button type="submit">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+
     </div>
-  </footer>
+
+    <div class="footer-bottom">
+        <p>
+            © 2016 Skypower Electro Systems Pvt. Ltd.
+            All rights reserved.
+        </p>
+
+        <div class="footer-policy">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </div>
+
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="script.js"></script>

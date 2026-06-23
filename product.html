@@ -4,9 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Products | SkyPower Stabilizers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="responsvie.css" />
 </head>
 <body>
@@ -15,8 +19,13 @@
       <span><i class="fa-regular fa-envelope-open"></i> <a href="mailto:skypower142@gmail.com">skypower142@gmail.com</a></span>
       <span><i class="fa-brands fa-whatsapp"></i> <a href="tel:+918860705070">+91 88607 05070</a></span>
     </div>
-    <a class="topbar-action" href="tel:+91958275348">Need help? Call now</a>
+    <a class="topbar-action" href="tel:+918860705070" aria-label="Call +91 88607 05070">Need help? Call now</a>
   </section>
+
+  <a class="call-now-float" href="tel:+918860705070" aria-label="Call +91 88607 05070">
+    <i class="fa-solid fa-phone"></i>
+    Call now
+  </a>
 
   <header class="site-header">
     <div class="container header-inner">
@@ -29,146 +38,512 @@
         <a href="about.html" class="navs">About</a>
         <a href="product.html" class="navs active">Product</a>
         <a href="contact.html" class="navs">Contact</a>
+        <button type="button" id="menu" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="nav-toggle-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="section-card">
-      <div class="section-header">
-        <span>Our range</span>
-        <h2>Voltage stabilizers for every application.</h2>
-      </div>
-      <div class="feature-grid">
-        <article class="feature-card">
-          <i class="fa-solid fa-house"></i>
-          <h3>Home Stabilizers</h3>
-          <p>Reliable performance for air conditioners, refrigerators, TVs, and other household equipment.</p>
-        </article>
-        <article class="feature-card">
-          <i class="fa-solid fa-store"></i>
-          <h3>Commercial Stabilizers</h3>
-          <p>Designed for shops, restaurants, and offices to safeguard electronics and lighting systems.</p>
-        </article>
-        <article class="feature-card">
-          <i class="fa-solid fa-industry"></i>
-          <h3>Industrial Stabilizers</h3>
-          <p>Heavy-duty models for manufacturing, plant equipment, and sensitive machinery.</p>
-        </article>
-      </div>
+    
+     
+
+    
+  <main class="products-page">
+
+    <!-- Hero -->
+    <section class="product-hero">
+        <span class="section-tag">OUR RANGE</span>
+
+        <h1>Voltage Stabilizers for Every Application</h1>
+
+        <p>
+            From homes to heavy industries, SkyPower delivers dependable
+            voltage stabilization solutions designed to protect equipment,
+            enhance performance, and extend product life.
+        </p>
     </section>
 
-    <section class="section-card">
-      <div class="about-home grid-two">
-        <div class="about-text">
-          <h2>Designed for modern electronic businesses</h2>
-          <p>Our product range is built for reliability and professional installation. From retail outlets to industrial workshops, SkyPower brings elegant voltage control to every electrical load.</p>
-          <p>Each stabilizer is rigorously tested to match the expectations of demanding customers and modern electronics.</p>
+
+    <!-- Categories -->
+    <section class="categories">
+
+        <div class="category-card">
+            <div class="icon">
+                <i class="fa-solid fa-house"></i>
+            </div>
+
+            <div class="content">
+                <h3>Home Stabilizers</h3>
+
+                <p>
+                    Reliable performance for air conditioners,
+                    refrigerators, TVs, and household equipment.
+                </p>
+            </div>
         </div>
-        <div class="about-image">
-          <img src="imgs/prod6.jpg" alt="Electronic business voltage stabilizer" />
+
+
+        <div class="category-card">
+            <div class="icon">
+                <i class="fa-solid fa-store"></i>
+            </div>
+
+            <div class="content">
+                <h3>Commercial Stabilizers</h3>
+
+                <p>
+                    Designed for shops, restaurants and offices to
+                    safeguard electronics and lighting systems.
+                </p>
+            </div>
         </div>
-      </div>
+
+
+        <div class="category-card">
+            <div class="icon">
+                <i class="fa-solid fa-industry"></i>
+            </div>
+
+            <div class="content">
+                <h3>Industrial Stabilizers</h3>
+
+                <p>
+                    Heavy-duty models for manufacturing plants and
+                    sensitive industrial machinery.
+                </p>
+            </div>
+        </div>
+
     </section>
 
-    <section class="products section-card">
-      <div class="section-header">
-        <span>Featured products</span>
-        <h2>Top stabilizers from our catalog.</h2>
-      </div>
-      <div class="product2">
-        <div class="card-space">
-          <article class="cards">
-            <img src="imgs/prod1.jpg" alt="Home stabilizer" />
-            <h3>HomeCare Series</h3>
-            <p>Compact stabilizer with digital display and fast voltage response.</p>
-            <a class="button secondary" href="contact.html">Enquire now</a>
-          </article>
-          <article class="cards">
-            <img src="imgs/prod2.png" alt="Office stabilizer" />
-            <h3>OfficeGuard Series</h3>
-            <p>Protects workstations, printers, and small business equipment from spikes.</p>
-            <a class="button secondary" href="contact.html">Enquire now</a>
-          </article>
-          <article class="cards">
-            <img src="imgs/prod3.jpg" alt="Industrial stabilizer" />
-            <h3>PowerMax Industrial</h3>
-            <p>Robust output for industrial loads and continuous use.</p>
-            <a class="button secondary" href="contact.html">Enquire now</a>
-          </article>
+
+    <!-- Showcase -->
+    <section class="showcase">
+
+        <div class="showcase-content">
+
+            <h2>Designed for Modern Electronic Businesses</h2>
+
+            <p>
+                Our product range is built for reliability and professional
+                installation. From retail outlets to industrial workshops,
+                SkyPower brings elegant voltage control to every electrical load.
+            </p>
+
+            <p>
+                Each stabilizer is rigorously tested to match the expectations
+                of demanding customers and modern electronics.
+            </p>
+
+
+            <div class="trust-badges">
+
+                <div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Tested Reliability</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-medal"></i>
+                    <span>Long-Term Performance</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Professional Quality</span>
+                </div>
+
+            </div>
+
         </div>
-        <div class="card-space">
-          <article class="cards">
-            <img src="imgs/prod4.jpg" alt="Premium stabilizer" />
-            <h3>PremiumLine</h3>
-            <p>High-end model with advanced diagnostics and premium build quality.</p>
-            <a class="button secondary" href="contact.html">Enquire now</a>
-          </article>
-          <article class="cards">
-            <img src="imgs/prod5.jpg" alt="Appliance stabilizer" />
-            <h3>Appliance Protect</h3>
-            <p>Perfect for sensitive home appliances and electronics.</p>
-            <a class="button secondary" href="contact.html">Enquire now</a>
-          </article>
-          <article class="cards">
-            <img src="imgs/prod6.jpg" alt="Bulk stabilizer" />
-            <h3>Bulk Installations</h3>
-            <p>Cost-effective solutions for factories, warehouses, and large installations.</p>
-            <a class="button secondary" href="contact.html">Enquire now</a>
-          </article>
+
+
+        <div class="showcase-image">
+            <img src="imgs/side-support.jpg"
+                 alt="SkyPower Stabilizer">
         </div>
-      </div>
+
     </section>
 
-    <section class="features section-card">
-      <div class="section-header">
-        <span>Benefits</span>
-        <h2>Why our products stand out.</h2>
-      </div>
-      <div class="feature-grid">
-        <article class="feature-card">
-          <i class="fa-solid fa-bolt"></i>
-          <h3>Fast response</h3>
-          <p>Voltage correction in milliseconds for continuous protection.</p>
-        </article>
-        <article class="feature-card">
-          <i class="fa-solid fa-shield"></i>
-          <h3>Built-in safety</h3>
-          <p>Automatic disconnect on dangerous voltage swings.</p>
-        </article>
-        <article class="feature-card">
-          <i class="fa-solid fa-chart-line"></i>
-          <h3>Energy efficient</h3>
-          <p>Low-loss operation keeps running costs down while protecting your appliances.</p>
-        </article>
-      </div>
+
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+
+        <div class="section-title">
+
+            <span>FEATURED PRODUCTS</span>
+
+            <h2>Top Stabilizers from Our Catalog</h2>
+
+        </div>
+
+
+        <div class="product-grid">
+
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="imgs/prod1.png"
+                         alt="">
+                </div>
+
+                <div class="product-info">
+
+                    <h3>HomeCare Series</h3>
+
+                    <p>
+                        Compact stabilizer with digital display and
+                        fast voltage response.
+                    </p>
+
+                    <a href="contact.html" class="btn-outline">
+                        Enquire Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="imgs/prod2.png"
+                         alt="">
+                </div>
+
+                <div class="product-info">
+
+                    <h3>OfficeGuard Series</h3>
+
+                    <p>
+                        Protects workstations, printers and small
+                        business equipment from spikes.
+                    </p>
+
+                    <a href="contact.html" class="btn-outline">
+                        Enquire Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="imgs/prod3.jpg"
+                         alt="">
+                </div>
+
+                <div class="product-info">
+
+                    <h3>PowerMax Industrial</h3>
+
+                    <p>
+                        Robust output for industrial loads and
+                        continuous use.
+                    </p>
+
+                    <a href="contact.html" class="btn-outline">
+                        Enquire Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="imgs/prod4.jpg"
+                         alt="">
+                </div>
+
+                <div class="product-info">
+
+                    <h3>PremiumLine</h3>
+
+                    <p>
+                        Advanced diagnostics with premium build quality.
+                    </p>
+
+                    <a href="contact.html" class="btn-outline">
+                        Enquire Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="imgs/prod5.jpg"
+                         alt="">
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Appliance Protect</h3>
+
+                    <p>
+                        Perfect for sensitive home appliances and
+                        electronic devices.
+                    </p>
+
+                    <a href="contact.html" class="btn-outline">
+                        Enquire Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="imgs/prod6.jpg"
+                         alt="">
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Bulk Installations</h3>
+
+                    <p>
+                        Cost-effective solutions for factories,
+                        warehouses and large installations.
+                    </p>
+
+                    <a href="contact.html" class="btn-outline">
+                        Enquire Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
     </section>
+
+
+
+    <!-- Benefits -->
+    <section class="benefits">
+
+        <div class="section-title">
+
+            <span>BENEFITS</span>
+
+            <h2>Why Our Products Stand Out</h2>
+
+        </div>
+
+
+        <div class="benefits-grid">
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+
+                <div>
+                    <h3>Fast Response</h3>
+
+                    <p>
+                        Voltage correction in milliseconds
+                        for continuous protection.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-shield"></i>
+                </div>
+
+                <div>
+                    <h3>Built-In Safety</h3>
+
+                    <p>
+                        Automatic disconnect on dangerous
+                        voltage swings.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <div>
+                    <h3>Energy Efficient</h3>
+
+                    <p>
+                        Low-loss operation keeps running costs
+                        down while protecting appliances.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Technology Strip -->
+    <section class="technology-strip">
+
+        <div>Wide Voltage Range</div>
+
+        <div>Microcontroller Technology</div>
+
+        <div>Overload & Surge Protection</div>
+
+        <div>Copper Wound Transformer</div>
+
+        <div>Wall Mount Design</div>
+
+    </section>
+
+</main>
   </main>
 
   <footer class="footer">
+
     <div class="footer-container">
-      <div class="footer-col">
-        <h3>Head office</h3>
-        <p><i class="fas fa-map-marker-alt"></i> Plot No 78/1 Bhalswa Jahangirpuri, Delhi-110042</p>
-        <p><i class="fas fa-clock"></i> Mon - Sat: 9:00am - 6:00pm</p>
-      </div>
-      <div class="footer-col">
-        <h3>Contact</h3>
-        <p><i class="fas fa-phone"></i> +91 88607 05070</p>
-        <p><i class="fas fa-mobile-alt"></i> +91 95827 5348</p>
-        <p><i class="fas fa-envelope"></i> skypower142@gmail.com</p>
-      </div>
-      <div class="footer-col">
-        <h3>Quick links</h3>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="product.html">Product</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+
+        <!-- Company -->
+        <div class="footer-col company">
+            <img src="imgs/sp-logo.png" alt="Skypower Logo" class="footer-logo">
+
+            <p>
+                Advanced voltage stabilizers built for performance,
+                protection, and peace of mind.
+            </p>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/skypower142" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/skypower142" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/skypower142" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@skypower142" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- Company Links -->
+        <div class="footer-col">
+            <h3>Company</h3>
+
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Certifications</a></li>
+                <li><a href="#">News & Media</a></li>
+            </ul>
+        </div>
+
+        <!-- Products -->
+        <div class="footer-col">
+            <h3>Products</h3>
+
+            <ul>
+                <li><a href="#">Residential Stabilizers</a></li>
+                <li><a href="#">Commercial Stabilizers</a></li>
+                <li><a href="#">Industrial Stabilizers</a></li>
+                <li><a href="#">Servo Stabilizers</a></li>
+                <li><a href="#">Bulk Solutions</a></li>
+            </ul>
+        </div>
+
+        <!-- Solutions -->
+        <div class="footer-col">
+            <h3>Solutions</h3>
+
+            <ul>
+                <li><a href="#">For Home</a></li>
+                <li><a href="#">For Business</a></li>
+                <li><a href="#">For Industry</a></li>
+                <li><a href="#">OEM Solutions</a></li>
+                <li><a href="#">Custom Solutions</a></li>
+            </ul>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-col">
+            <h3>Support</h3>
+
+            <ul>
+                <li><a href="#">Download Center</a></li>
+                <li><a href="#">Product Registration</a></li>
+                <li><a href="#">Warranty Policy</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Service Center</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col newsletter">
+            <h3>Newsletter</h3>
+
+            <p>
+                Subscribe to get updates on new products and offers.
+            </p>
+
+            <form class="newsletter-form"action="https://formsubmit.co/skypower142@gmail.com" method="post">
+                <input type="email"
+                       placeholder="Enter your email" name="email">
+
+                <button type="submit">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+
     </div>
-  </footer>
+
+    <div class="footer-bottom">
+        <p>
+            © 2016 Skypower Electro Systems Pvt. Ltd.
+            All rights reserved.
+        </p>
+
+        <div class="footer-policy">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </div>
+
+</footer>
 
   <script src="script.js"></script>
 </body>
