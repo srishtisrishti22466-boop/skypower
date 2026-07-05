@@ -1,26 +1,4 @@
 
-//   let swipers = () => {
-//   new Swiper(".mySwiper", {
-//     slidesPerView: 1,
-//     spaceBetween: 10,
-//     loop: true,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//     breakpoints: {
-//       768: {
-//         slidesPerView: 2,
-//         spaceBetween: 20,
-//       },
-//       1024: {
-//         slidesPerView: 3,
-//         spaceBetween: 25,
-//       },
-//     },
-//   });
-// };
-document.addEventListener("DOMContentLoaded", function () {
   const swiperEl = document.querySelector(".mySwiper");
   if (swiperEl) {
     new Swiper(".mySwiper", {
@@ -59,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
   if (form) {
     form.addEventListener("submit", function (event) {
-      // allow normal submission to reach FormSubmit.co
       alert("Form submitted successfully!");
     });
   }
@@ -80,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
-});
+
 
   
 
